@@ -1,5 +1,6 @@
 # UIUC_sophmore
-Code Written In Sophmore Year
+ Code Written In Sophmore Year
+
 | Course Number | Course Title | Language |
 | ------------- | ------------ | -------- |
 | CS 225 | Data Structure | C++ |
