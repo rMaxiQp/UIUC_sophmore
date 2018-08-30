@@ -1,0 +1,40 @@
+Grades for version committed on time
+	has_cycle: 40.0 / 40
+			*Passed test: base case
+			*Passed test: base case (evil)
+			*Passed test: single
+			*Passed test: single (evil)
+			*Passed test: given1
+			*Passed test: given1 (evil)
+			*Passed test: given2
+			*Passed test: given2 (evil)
+			*Passed test: combined
+			*Passed test: combined (evil)
+		
+	max_depth: 30.0 / 30
+			*Passed test: base case
+			*Passed test: base case (evil)
+			*Passed test: given_1
+			*Passed test: given_1 (evil)
+			*Passed test: given_2
+			*Passed test: given_2 (evil)
+			*Passed test: given_3
+			*Passed test: given_3 (evil)
+			*Passed test: combined
+			*Passed test: combined (evil)
+		
+	shift_many: 20.0 / 20
+			*Passed test: base case
+			*Passed test: base case (evil)
+			*Passed test: given_1
+			*Passed test: given_1 (evil)
+			*Passed test: given_2
+			*Passed test: given_2 (evil)
+			*Passed test: given_3
+			*Passed test: given_3 (evil)
+			*Passed test: large
+			*Passed test: large (evil)
+		
+Total: 90.0 / 70
+
+Final Score: 90.0 / 70

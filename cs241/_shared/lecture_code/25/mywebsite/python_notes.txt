@@ -1,0 +1,4 @@
+cd to this directory
+then run
+python -m SimpleHTTPServer
+(this will serve files from the current directory)

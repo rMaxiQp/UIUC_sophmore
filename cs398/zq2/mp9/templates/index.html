@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>CS 398</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <style>
+            .content {
+                position: absolute;
+                left: 50%;
+                top:45%;
+                transform: translate(-45%, -50%);
+                width:50%;
+            }
+            
+            .search-button {
+                margin:5px;
+                box-shadow: 3px 3px;
+            }
+            
+            .search-button:hover {
+                box-shadow: 3px 3px #5cb85c;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class="container-fluid content">
+            <form class="form-inline" method="POST">
+                <input name="search" id="search" type="text" class="form-control" placeholder="Search" style="width:70%;">
+                <button type="submit" class="btn btn-outline-success search-button">Submit</button>
+            </form>
+           <p>Answer: {{ count.answer }}</p>
+           <p>Time Elapsed: {{ count.time }}</p>
+        </div>
+    </body>
+    
+</html>

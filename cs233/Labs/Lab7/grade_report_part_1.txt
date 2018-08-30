@@ -1,0 +1,30 @@
+Grades for version committed on time
+	my_strlen: 5.0 / 5
+			*Passed test: my_strlen("hello world")
+			*Passed test: my_strlen("")
+			*Passed test: my_strlen(NULL)
+			*Passed test: my_strlen long
+		
+	circular_shift: 5.0 / 5
+			*Passed test: circular_shift(0,2)
+			*Passed test: circular_shift(2095, 3)
+			*Passed test: circular_shift(30,0)
+			*Passed test: circular_shift(0,0)
+			*Passed test: circular_shift(999,1)
+		
+	key_addition: 10.0 / 10
+			*Passed test: key_addition provided test
+			*Passed test: key_addition zeros
+			*Passed test: key_addition large
+			*Passed test: key_addition small
+		
+	inv_byte_substitution: 7.5 / 10
+			*Passed test: inv_byte_substitution test default
+			*Passed test: inv_byte_substitution test zeros
+			*Failed test: inv_byte_substitution test large(lbu test)
+				*Your output: 100 99 98 97 57 56 51 50 49 48 16 1 1 44 16 1 
+			*Passed test: inv_byte_substitution test small
+		
+Total: 27.5 / 30
+
+Final Score: 27.5 / 30

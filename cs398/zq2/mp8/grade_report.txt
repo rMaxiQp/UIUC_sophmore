@@ -1,0 +1,36 @@
+SUMMARY
+=======
+	Autograder Run Time: Wed 2018-04-18 06:57AM
+	Commit used for autograder: 13739fe3fbc0da7aa61fbf42511b0a95304687cd
+	Points Earned: 17
+	Points Possible: 17
+	Assignment Grade: 100.0%
+
+
+TestMP8TerraformFile
+====================
+	> test_data_disk
+	--------------
+	Description: None
+	Outcome: passed
+	Points: 4 out of 4
+
+	> test_instance
+	-------------
+	Description: None
+	Outcome: passed
+	Points: 7 out of 7
+
+	> test_network_setup
+	------------------
+	Description: None
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_storage_bucket
+	-------------------
+	Description: None
+	Outcome: passed
+	Points: 3 out of 3
+
+

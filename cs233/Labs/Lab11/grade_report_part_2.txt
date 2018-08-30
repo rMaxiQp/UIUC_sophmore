@@ -1,0 +1,65 @@
+Grades for version committed on time
+	no_deps_or_beqs: 20.0 / 20
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+			*Passed test: no_deps_or_beqs
+		
+	beqs_but_no_deps: 20.0 / 20
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+			*Passed test: beqs_but_no_deps
+		
+	deps_but_no_beqs: 20.0 / 20
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+			*Passed test: deps_but_no_beqs
+		
+	full pipeline test: 20.0 / 20
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+			*Passed test: full_pipeline_test
+		
+Total: 80.0 / 80
+
+Final Score: 80.0 / 80

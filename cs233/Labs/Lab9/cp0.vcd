@@ -1,0 +1,148 @@
+$date
+	Wed Oct 25 16:11:42 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cp0_test $end
+$var wire 30 ! EPC [29:0] $end
+$var wire 1 " TakenInterrupt $end
+$var wire 32 # rd_data [31:0] $end
+$var reg 1 $ ERET $end
+$var reg 1 % MTC0 $end
+$var reg 1 & TimerInterrupt $end
+$var reg 1 ' clock $end
+$var reg 30 ( next_pc [29:0] $end
+$var reg 5 ) regnum [4:0] $end
+$var reg 1 * reset $end
+$var reg 32 + wr_data [31:0] $end
+$scope module c0 $end
+$var wire 30 , EPC [29:0] $end
+$var wire 1 - ERET $end
+$var wire 1 . MTC0 $end
+$var wire 1 " TakenInterrupt $end
+$var wire 1 / TimerInterrupt $end
+$var wire 1 0 clock $end
+$var wire 30 1 next_pc [29:0] $end
+$var wire 32 2 rd_data [31:0] $end
+$var wire 5 3 regnum [4:0] $end
+$var wire 1 4 reset $end
+$var wire 32 5 wr_data [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 5
+14
+b0 3
+bz 2
+b0 1
+00
+0/
+0.
+0-
+bz ,
+b0 +
+1*
+b0 )
+b0 (
+0'
+0&
+0%
+0$
+bz #
+z"
+bz !
+$end
+#5
+1'
+10
+#10
+0'
+00
+b11111111111111111111111111111111 +
+b11111111111111111111111111111111 5
+b1100 )
+b1100 3
+1%
+1.
+0*
+04
+#15
+1'
+10
+#20
+0'
+00
+0%
+0.
+#25
+1'
+10
+#30
+0'
+00
+b100000000000000000100 (
+b100000000000000000100 1
+1&
+1/
+#35
+1'
+10
+#40
+0'
+00
+b100000000000000001000 (
+b100000000000000001000 1
+#45
+1'
+10
+#50
+0'
+00
+b1110 )
+b1110 3
+#55
+1'
+10
+#60
+0'
+00
+b1101 )
+b1101 3
+#65
+1'
+10
+#70
+0'
+00
+1$
+1-
+0&
+0/
+#75
+1'
+10
+#80
+0'
+00
+b1100 )
+b1100 3
+#85
+1'
+10
+#90
+0'
+00
+b1101 )
+b1101 3
+#95
+1'
+10
+#100
+0'
+00

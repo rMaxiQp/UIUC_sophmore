@@ -1,0 +1,23 @@
+Part1: app.py
+In part1, we are asked to implement counting occurrences of the given text. re is great for this job because of findall(). 
+Adding the length of each returned list for each iteration let me finish it in one line. Furthermore, since the html context has been set to all lower cases,
+we need to convert the searching word to lower case. Otherwise, when we are searching a word with capitalized letters, the return value would be 0, 
+which is a false statement. Also, since everything is lower cased, it seems a good idea to set the previous word (cached word) into lower case to maintain consistency.
+
+Part2: Dockerfile
+In part2, we are asked to complete provided Dockerfile. Since provided python3 from tiangolo/uwsgi-nginx-flask doesn't contain bs4 and requests, 
+I need to install those two packages by RUN command. Then, copying local app.py to docker container and run the file after launch by CMD command 
+would be sufficient.
+
+Part3: deploy.yaml
+In part3, we need to create deployment pod with 3 replicated Pods and image from our own container. By modifying the relative tags from example, 
+it's not too hard to make the file running. One thing I noticed, and confirmed on Piazza is the apiVersion that we use may need to change: using apps/v1 
+may return error when applying the file from GCP console. Thus, apps/v1beta1 may be a safer choice.
+
+Part4: ingress.yaml
+In part4, we need to create a server that provides services to other user. For this server, we are using TCP as the protocol and only listening to 
+port 8080. With the help of suggested example, it's simple to make the file work.
+
+After setting everything up, we are able to run our little searching engine on a randomed assigned external IP address. Since we create 3 pods in 
+deploy.yaml, the service should be connected with 3 pods. Otherwise, there may be some issues in the code (e.g. typos). If the tag in each .yaml file 
+matches, then there will be conenction between them, and you will be able to open the provided IP address and test the searching on that website.

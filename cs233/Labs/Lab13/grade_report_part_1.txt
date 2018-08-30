@@ -1,0 +1,7 @@
+Grades for version committed on time
+	transpose: 20 / 20
+			*Passed test: transpose
+		
+Total: 20.0 / 20
+
+Final Score: 20.0 / 20

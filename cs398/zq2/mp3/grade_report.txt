@@ -1,0 +1,89 @@
+SUMMARY
+=======
+	Autograder Run Time: Wed 2018-02-14 01:00PM
+	Points Earned: 42
+	Points Possible: 42
+	Assignment Grade: 100.0%
+
+
+TestMP3CityExpensiveness
+========================
+	> test_larger_subset
+	------------------
+	Description: Tests against the a larger subset of the yelp data
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_output_format
+	------------------
+	Description: Tests that your output matches the spec
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_sample
+	-----------
+	Description: tests against the sample input/output
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description:  tests that you return a valid RDD 
+	Outcome: passed
+	Points: 3 out of 3
+
+
+TestMP3EngagingReviews
+======================
+	> test_larger_subset
+	------------------
+	Description: Tests against the a larger subset of the yelp data
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_output_format
+	------------------
+	Description: Tests that your output matches the spec
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_sample
+	-----------
+	Description: tests against the sample input/output
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description:  tests that you return a valid RDD 
+	Outcome: passed
+	Points: 3 out of 3
+
+
+TestMP3ReviewerAccuracy
+=======================
+	> test_larger_subset
+	------------------
+	Description: Tests against the a larger subset of the yelp data
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_output_format
+	------------------
+	Description: Tests that your output matches the spec
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_sample
+	-----------
+	Description: tests against the sample input/output
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description:  tests that you return a valid RDD 
+	Outcome: passed
+	Points: 3 out of 3
+
+

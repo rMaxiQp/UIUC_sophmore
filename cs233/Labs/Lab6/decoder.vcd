@@ -1,0 +1,128 @@
+$date
+	Fri Oct  6 18:22:50 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module decoder_test $end
+$var wire 1 ! addm $end
+$var wire 3 " alu_op [2:0] $end
+$var wire 1 # alu_src2 $end
+$var wire 1 $ byte_load $end
+$var wire 1 % byte_we $end
+$var wire 2 & control_type [1:0] $end
+$var wire 1 ' except $end
+$var wire 1 ( lui $end
+$var wire 1 ) mem_read $end
+$var wire 1 * rd_src $end
+$var wire 1 + slt $end
+$var wire 1 , word_we $end
+$var wire 1 - writeenable $end
+$var reg 6 . funct [5:0] $end
+$var reg 6 / opcode [5:0] $end
+$var reg 1 0 zero $end
+$scope module decoder $end
+$var wire 1 1 add $end
+$var wire 1 2 addi $end
+$var wire 1 ! addm $end
+$var wire 3 3 alu_op [2:0] $end
+$var wire 1 # alu_src2 $end
+$var wire 1 4 and_ $end
+$var wire 1 5 andi $end
+$var wire 1 6 beq $end
+$var wire 1 7 bne $end
+$var wire 1 $ byte_load $end
+$var wire 1 % byte_we $end
+$var wire 2 8 control_type [1:0] $end
+$var wire 1 ' except $end
+$var wire 6 9 funct [5:0] $end
+$var wire 1 : j $end
+$var wire 1 ; jr $end
+$var wire 1 < lbu $end
+$var wire 1 ( lui $end
+$var wire 1 = lw $end
+$var wire 1 ) mem_read $end
+$var wire 1 > nor_ $end
+$var wire 6 ? opcode [5:0] $end
+$var wire 1 @ or_ $end
+$var wire 1 A ori $end
+$var wire 1 * rd_src $end
+$var wire 1 B sb $end
+$var wire 1 + slt $end
+$var wire 1 C sub $end
+$var wire 1 D sw $end
+$var wire 1 , word_we $end
+$var wire 1 - writeenable $end
+$var wire 1 E xor_ $end
+$var wire 1 F xori $end
+$var wire 1 G zero $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+b0 ?
+0>
+0=
+0<
+0;
+0:
+b100000 9
+b0 8
+07
+06
+05
+04
+b10 3
+02
+11
+00
+b0 /
+b100000 .
+1-
+0,
+0+
+0*
+0)
+0(
+0'
+b0 &
+0%
+0$
+0#
+b10 "
+0!
+$end
+#10
+b11 "
+b11 3
+01
+1C
+b100010 .
+b100010 9
+#20
+1'
+0-
+b1 &
+b1 8
+0C
+b100 /
+b100 ?
+16
+#30
+b0 &
+b0 8
+10
+1G
+#40

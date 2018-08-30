@@ -1,0 +1,112 @@
+[32m✱ Checking your athentication credentials.[0m
+[33m✱ Preparing your project directory for upload.[0m
+[33m✱ Uploading your project directory. This may take a few minutes.[0m
+ 0 B / 146.71 KiB  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    0.00% 146.71 KiB / 146.71 KiB  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  100.00% 1.40 MiB/s 146.71 KiB / 146.71 KiB  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  100.00% 712.67 KiB/s 146.71 KiB / 146.71 KiB  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  100.00% 668.75 KiB/s 0s
+[32m✱ Folder uploaded. Server is now processing your submission.[0m
+[32m✱ Your job request has been posted to the queue.[0m
+[37m⣾[0m Waiting for the server to process your request...                                                     [33m✱ Server has accepted your job submission and started to configure the container.[0m
+[33m✱ Downloading your code.[0m
+[33m✱ Using cwpearson/2017fa_ece408_mxnet_docker:amd64-gpu-latest as container image.[0m
+[33m✱ Starting container.[0m
+[32m✱ Running echo "Building project"[0m
+Building project
+[32m✱ Running /bin/bash -c "cp -rv /ece408-src/* /mxnet/src/operator/custom"[0m
+'/ece408-src/new-inl.h' -> '/mxnet/src/operator/custom/new-inl.h'
+'/ece408-src/new.cc' -> '/mxnet/src/operator/custom/new.cc'
+'/ece408-src/new.cu' -> '/mxnet/src/operator/custom/new.cu'
+[32m✱ Running /src/build.sh[0m
+++ readlink -f /src/build.sh
++ SCRIPT=/src/build.sh
+++ dirname /src/build.sh
++ SCRIPTPATH=/src
++ SRC_DIR=/src/ece408_src
+++ find /src/ece408_src -type f
++ SRCS='/src/ece408_src/new-forward.cuh
+/src/ece408_src/new-inl.h
+/src/ece408_src/.DS_Store
+/src/ece408_src/new-forward.h
+/src/ece408_src/forward-kernel-macro.cuh
+/src/ece408_src/new.cc
+/src/ece408_src/new.cu'
++ '[' -z x ']'
++ for src in '$SRCS'
++ cp -v /src/ece408_src/new-forward.cuh /mxnet/src/operator/custom/.
+'/src/ece408_src/new-forward.cuh' -> '/mxnet/src/operator/custom/./new-forward.cuh'
++ for src in '$SRCS'
++ cp -v /src/ece408_src/new-inl.h /mxnet/src/operator/custom/.
+'/src/ece408_src/new-inl.h' -> '/mxnet/src/operator/custom/./new-inl.h'
++ for src in '$SRCS'
++ cp -v /src/ece408_src/.DS_Store /mxnet/src/operator/custom/.
+'/src/ece408_src/.DS_Store' -> '/mxnet/src/operator/custom/./.DS_Store'
++ for src in '$SRCS'
++ cp -v /src/ece408_src/new-forward.h /mxnet/src/operator/custom/.
+'/src/ece408_src/new-forward.h' -> '/mxnet/src/operator/custom/./new-forward.h'
++ for src in '$SRCS'
++ cp -v /src/ece408_src/forward-kernel-macro.cuh /mxnet/src/operator/custom/.
+'/src/ece408_src/forward-kernel-macro.cuh' -> '/mxnet/src/operator/custom/./forward-kernel-macro.cuh'
++ for src in '$SRCS'
++ cp -v /src/ece408_src/new.cc /mxnet/src/operator/custom/.
+'/src/ece408_src/new.cc' -> '/mxnet/src/operator/custom/./new.cc'
++ for src in '$SRCS'
++ cp -v /src/ece408_src/new.cu /mxnet/src/operator/custom/.
+'/src/ece408_src/new.cu' -> '/mxnet/src/operator/custom/./new.cu'
+++ nproc
++ nice -n20 make -j4 -C /mxnet
+make: Entering directory '/mxnet'
+g++ -std=c++11 -c -DMSHADOW_FORCE_STREAM -Wall -Wsign-compare -O3 -DNDEBUG=1 -I/mxnet/mshadow/ -I/mxnet/dmlc-core/include -fPIC -I/mxnet/nnvm/include -I/mxnet/dlpack/include -Iinclude -funroll-loops -Wno-unused-variable -Wno-unused-parameter -Wno-unknown-pragmas -Wno-unused-local-typedefs -msse3 -I/usr/local/cuda/include -DMSHADOW_USE_CBLAS=1 -DMSHADOW_USE_MKL=0 -DMSHADOW_RABIT_PS=0 -DMSHADOW_DIST_PS=0 -DMSHADOW_USE_PASCAL=0 -DMXNET_USE_OPENCV=0 -fopenmp -DMXNET_USE_LAPACK -DMSHADOW_USE_CUDNN=1 -I/usr/include/openblas -Wno-strict-aliasing -Wno-sign-compare -ftrack-macro-expansion=0 -Wno-misleading-indentation -I/mxnet/cub -DMXNET_USE_NVRTC=0 -MMD -c src/operator/custom/new.cc -o build/src/operator/custom/new.o
+cd /mxnet/dmlc-core; make libdmlc.a USE_SSE=1 config=/mxnet/config.mk; cd /mxnet
+make[1]: Entering directory '/mxnet/dmlc-core'
+make[1]: 'libdmlc.a' is up to date.
+make[1]: Leaving directory '/mxnet/dmlc-core'
+/usr/local/cuda/bin/nvcc -lineinfo -std=c++11 -Xcompiler -D_FORCE_INLINES -O3 -ccbin g++  -gencode arch=compute_30,code=sm_30 -gencode arch=compute_35,code=sm_35 -gencode arch=compute_50,code=sm_50 -gencode arch=compute_52,code=sm_52 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_61,code=[sm_61,compute_61] --fatbin-options -compress-all -Xcompiler "-DMSHADOW_FORCE_STREAM -Wall -Wsign-compare -O3 -DNDEBUG=1 -I/mxnet/mshadow/ -I/mxnet/dmlc-core/include -fPIC -I/mxnet/nnvm/include -I/mxnet/dlpack/include -Iinclude -funroll-loops -Wno-unused-variable -Wno-unused-parameter -Wno-unknown-pragmas -Wno-unused-local-typedefs -msse3 -I/usr/local/cuda/include -DMSHADOW_USE_CBLAS=1 -DMSHADOW_USE_MKL=0 -DMSHADOW_RABIT_PS=0 -DMSHADOW_DIST_PS=0 -DMSHADOW_USE_PASCAL=0 -DMXNET_USE_OPENCV=0 -fopenmp -DMXNET_USE_LAPACK -DMSHADOW_USE_CUDNN=1 -I/usr/include/openblas -Wno-strict-aliasing -Wno-sign-compare -ftrack-macro-expansion=0 -Wno-misleading-indentation -I/mxnet/cub -DMXNET_USE_NVRTC=0" -M -MT build/src/operator/custom/new_gpu.o src/operator/custom/new.cu >build/src/operator/custom/new_gpu.d
+/usr/local/cuda/bin/nvcc -c -o build/src/operator/custom/new_gpu.o -lineinfo -std=c++11 -Xcompiler -D_FORCE_INLINES -O3 -ccbin g++  -gencode arch=compute_30,code=sm_30 -gencode arch=compute_35,code=sm_35 -gencode arch=compute_50,code=sm_50 -gencode arch=compute_52,code=sm_52 -gencode arch=compute_60,code=sm_60 -gencode arch=compute_61,code=[sm_61,compute_61] --fatbin-options -compress-all -Xcompiler "-DMSHADOW_FORCE_STREAM -Wall -Wsign-compare -O3 -DNDEBUG=1 -I/mxnet/mshadow/ -I/mxnet/dmlc-core/include -fPIC -I/mxnet/nnvm/include -I/mxnet/dlpack/include -Iinclude -funroll-loops -Wno-unused-variable -Wno-unused-parameter -Wno-unknown-pragmas -Wno-unused-local-typedefs -msse3 -I/usr/local/cuda/include -DMSHADOW_USE_CBLAS=1 -DMSHADOW_USE_MKL=0 -DMSHADOW_RABIT_PS=0 -DMSHADOW_DIST_PS=0 -DMSHADOW_USE_PASCAL=0 -DMXNET_USE_OPENCV=0 -fopenmp -DMXNET_USE_LAPACK -DMSHADOW_USE_CUDNN=1 -I/usr/include/openblas -Wno-strict-aliasing -Wno-sign-compare -ftrack-macro-expansion=0 -Wno-misleading-indentation -I/mxnet/cub -DMXNET_USE_NVRTC=0" src/operator/custom/new.cu
+ar crv lib/libmxnet.a build/src/operator/custom/new.o build/src/operator/custom/new_gpu.o
+g++ -DMSHADOW_FORCE_STREAM -Wall -Wsign-compare -O3 -DNDEBUG=1 -I/mxnet/mshadow/ -I/mxnet/dmlc-core/include -fPIC -I/mxnet/nnvm/include -I/mxnet/dlpack/include -Iinclude -funroll-loops -Wno-unused-variable -Wno-unused-parameter -Wno-unknown-pragmas -Wno-unused-local-typedefs -msse3 -I/usr/local/cuda/include -DMSHADOW_USE_CBLAS=1 -DMSHADOW_USE_MKL=0 -DMSHADOW_RABIT_PS=0 -DMSHADOW_DIST_PS=0 -DMSHADOW_USE_PASCAL=0 -DMXNET_USE_OPENCV=0 -fopenmp -DMXNET_USE_LAPACK -DMSHADOW_USE_CUDNN=1 -I/usr/include/openblas -Wno-strict-aliasing -Wno-sign-compare -ftrack-macro-expansion=0 -Wno-misleading-indentation -I/mxnet/cub -DMXNET_USE_NVRTC=0 -shared -o lib/libmxnet.so build/src/operator/nn/softmax.o build/src/operator/tensor/elemwise_binary_broadcast_op_extended.o build/src/operator/tensor/elemwise_binary_op_extended.o build/src/operator/tensor/init_op.o build/src/operator/tensor/elemwise_binary_broadcast_op_basic.o build/src/operator/tensor/broadcast_reduce_op_index.o build/src/operator/tensor/broadcast_reduce_op_value.o build/src/operator/tensor/control_flow_op.o build/src/operator/tensor/elemwise_binary_op_basic.o build/src/operator/tensor/elemwise_unary_op.o build/src/operator/tensor/elemwise_sum.o build/src/operator/tensor/elemwise_binary_scalar_op_extended.o build/src/operator/tensor/indexing_op.o build/src/operator/tensor/ordering_op.o build/src/operator/tensor/elemwise_binary_broadcast_op_logic.o build/src/operator/tensor/la_op.o build/src/operator/tensor/elemwise_binary_op_logic.o build/src/operator/tensor/elemwise_binary_scalar_op_basic.o build/src/operator/tensor/matrix_op.o build/src/operator/tensor/elemwise_binary_scalar_op_logic.o build/src/operator/contrib/multibox_target.o build/src/operator/contrib/count_sketch.o build/src/operator/contrib/dequantize.o build/src/operator/contrib/deformable_psroi_pooling.o build/src/operator/contrib/fft.o build/src/operator/contrib/multibox_prior.o build/src/operator/contrib/ctc_loss.o build/src/operator/contrib/multi_proposal.o build/src/operator/contrib/psroi_pooling.o build/src/operator/contrib/quantize.o build/src/operator/contrib/deformable_convolution.o build/src/operator/contrib/ifft.o build/src/operator/contrib/multibox_detection.o build/src/operator/contrib/proposal.o build/src/operator/custom/native_op.o build/src/operator/custom/ndarray_op.o build/src/operator/custom/new.o build/src/operator/custom/custom.o build/src/operator/random/sample_multinomial_op.o build/src/operator/random/multisample_op.o build/src/operator/random/sample_op.o build/src/operator/nnpack/nnpack_util.o build/src/operator/mkl/mkl_cppwrapper.o build/src/operator/mkl/mkl_memory.o build/src/io/io.o build/src/io/image_aug_default.o build/src/io/iter_image_det_recordio.o build/src/io/image_io.o build/src/io/image_det_aug_default.o build/src/io/iter_csv.o build/src/io/iter_image_recordio.o build/src/io/iter_mnist.o build/src/io/iter_image_recordio_2.o build/src/common/mxrtc.o build/src/nnvm/legacy_op_util.o build/src/nnvm/legacy_json_util.o build/src/ndarray/autograd.o build/src/ndarray/ndarray_function.o build/src/ndarray/ndarray.o build/src/operator/instance_norm.o build/src/operator/svm_output.o build/src/operator/bilinear_sampler.o build/src/operator/pooling.o build/src/operator/crop.o build/src/operator/spatial_transformer.o build/src/operator/swapaxis.o build/src/operator/convolution_v1.o build/src/operator/softmax_output.o build/src/operator/operator_util.o build/src/operator/sequence_reverse.o build/src/operator/batch_norm_v1.o build/src/operator/rnn.o build/src/operator/operator.o build/src/operator/correlation.o build/src/operator/deconvolution.o build/src/operator/optimizer_op.o build/src/operator/lrn.o build/src/operator/convolution.o build/src/operator/pooling_v1.o build/src/operator/pad.o build/src/operator/fully_connected.o build/src/operator/sequence_mask.o build/src/operator/sequence_last.o build/src/operator/grid_generator.o build/src/operator/cudnn_algoreg.o build/src/operator/identity_attach_KL_sparse_reg.o build/src/operator/activation.o build/src/operator/upsampling.o build/src/operator/
+cudnn_batch_norm.o build/src/operator/loss_binary_op.o build/src/operator/regression_output.o build/src/operator/l2_normalization.o build/src/operator/slice_channel.o build/src/operator/concat.o build/src/operator/leaky_relu.o build/src/operator/roi_pooling.o build/src/operator/batch_norm.o build/src/operator/dropout.o build/src/operator/cross_device_copy.o build/src/operator/softmax_activation.o build/src/operator/make_loss.o build/src/engine/profiler.o build/src/engine/naive_engine.o build/src/engine/threaded_engine_pooled.o build/src/engine/threaded_engine.o build/src/engine/engine.o build/src/engine/threaded_engine_perdevice.o build/src/storage/storage.o build/src/c_api/c_api_symbolic.o build/src/c_api/c_api_ndarray.o build/src/c_api/c_api_executor.o build/src/c_api/c_predict_api.o build/src/c_api/c_api_function.o build/src/c_api/c_api.o build/src/c_api/c_api_error.o build/src/executor/inplace_addto_detect_pass.o build/src/executor/graph_executor.o build/src/executor/attach_op_execs_pass.o build/src/executor/attach_op_resource_pass.o build/src/kvstore/kvstore.o build/src/resource.o build/src/initialize.o /mxnet/dmlc-core/libdmlc.a build/src/operator/nn/softmax_gpu.o build/src/operator/tensor/indexing_op_gpu.o build/src/operator/tensor/elemwise_binary_op_extended_gpu.o build/src/operator/tensor/elemwise_binary_scalar_op_extended_gpu.o build/src/operator/tensor/elemwise_binary_scalar_op_basic_gpu.o build/src/operator/tensor/ordering_op_gpu.o build/src/operator/tensor/elemwise_binary_broadcast_op_basic_gpu.o build/src/operator/tensor/elemwise_binary_op_basic_gpu.o build/src/operator/tensor/elemwise_sum_gpu.o build/src/operator/tensor/init_op_gpu.o build/src/operator/tensor/elemwise_binary_scalar_op_logic_gpu.o build/src/operator/tensor/broadcast_reduce_op_index_gpu.o build/src/operator/tensor/matrix_op_gpu.o build/src/operator/tensor/broadcast_reduce_op_value_gpu.o build/src/operator/tensor/control_flow_op_gpu.o build/src/operator/tensor/elemwise_unary_op_gpu.o build/src/operator/tensor/elemwise_binary_broadcast_op_extended_gpu.o build/src/operator/tensor/elemwise_binary_broadcast_op_logic_gpu.o build/src/operator/tensor/la_op_gpu.o build/src/operator/tensor/elemwise_binary_op_logic_gpu.o build/src/operator/contrib/ctc_loss_gpu.o build/src/operator/contrib/psroi_pooling_gpu.o build/src/operator/contrib/quantize_gpu.o build/src/operator/contrib/deformable_convolution_gpu.o build/src/operator/contrib/ifft_gpu.o build/src/operator/contrib/multibox_detection_gpu.o build/src/operator/contrib/multibox_target_gpu.o build/src/operator/contrib/proposal_gpu.o build/src/operator/contrib/count_sketch_gpu.o build/src/operator/contrib/dequantize_gpu.o build/src/operator/contrib/deformable_psroi_pooling_gpu.o build/src/operator/contrib/fft_gpu.o build/src/operator/contrib/multibox_prior_gpu.o build/src/operator/contrib/multi_proposal_gpu.o build/src/operator/custom/native_op_gpu.o build/src/operator/custom/new_gpu.o build/src/operator/random/sample_multinomial_op_gpu.o build/src/operator/random/sample_op_gpu.o build/src/ndarray/ndarray_function_gpu.o build/src/operator/sequence_reverse_gpu.o build/src/operator/optimizer_op_gpu.o build/src/operator/lrn_gpu.o build/src/operator/pooling_v1_gpu.o build/src/operator/fully_connected_gpu.o build/src/operator/sequence_mask_gpu.o build/src/operator/swapaxis_gpu.o build/src/operator/regression_output_gpu.o build/src/operator/leaky_relu_gpu.o build/src/operator/identity_attach_KL_sparse_reg_gpu.o build/src/operator/activation_gpu.o build/src/operator/roi_pooling_gpu.o build/src/operator/cudnn_batch_norm_gpu.o build/src/operator/loss_binary_op_gpu.o build/src/operator/convolution_gpu.o build/src/operator/make_loss_gpu.o build/src/operator/batch_norm_gpu.o build/src/operator/upsampling_gpu.o build/src/operator/slice_channel_gpu.o build/src/operator/dropout_gpu.o build/src/operator/softmax_activation_gpu.o build/src/operator/svm_output_gpu.o build/src/operator/pad_gpu.o build/src/operator/deconvolution_gpu.o build/src/operator/correlation_gpu.o build/src/operator/instance_norm_gpu.o build/src/opera
+tor/concat_gpu.o build/src/operator/l2_normalization_gpu.o build/src/operator/grid_generator_gpu.o build/src/operator/sequence_last_gpu.o build/src/operator/pooling_gpu.o build/src/operator/convolution_v1_gpu.o build/src/operator/crop_gpu.o build/src/operator/spatial_transformer_gpu.o build/src/operator/softmax_output_gpu.o build/src/operator/bilinear_sampler_gpu.o build/src/operator/batch_norm_v1_gpu.o build/src/operator/rnn_gpu.o -pthread -lm -lcudart -lcublas -lcurand -lcusolver -L/usr/local/cuda/lib64 -L/usr/local/cuda/lib -lopenblas -fopenmp -lrt -llapack -lcudnn  -lcuda -lcufft \
+ -Wl,--whole-archive /mxnet/nnvm/lib/libnnvm.a -Wl,--no-whole-archive
+a - build/src/operator/custom/new.o
+a - build/src/operator/custom/new_gpu.o
+make: Leaving directory '/mxnet'
++ pip install --user -e /mxnet/python
+Obtaining file:///mxnet/python
+Requirement already satisfied: numpy in /root/.local/lib/python2.7/site-packages (from mxnet==0.11.0)
+Requirement already satisfied: requests in /root/.local/lib/python2.7/site-packages (from mxnet==0.11.0)
+Requirement already satisfied: graphviz in /root/.local/lib/python2.7/site-packages (from mxnet==0.11.0)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in /root/.local/lib/python2.7/site-packages (from requests->mxnet==0.11.0)
+Requirement already satisfied: idna<2.7,>=2.5 in /root/.local/lib/python2.7/site-packages (from requests->mxnet==0.11.0)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /root/.local/lib/python2.7/site-packages (from requests->mxnet==0.11.0)
+Requirement already satisfied: certifi>=2017.4.17 in /root/.local/lib/python2.7/site-packages (from requests->mxnet==0.11.0)
+Installing collected packages: mxnet
+  Running setup.py develop for mxnet
+Successfully installed mxnet
+[32m✱ Running python /src/final.py ece408-high[0m
+Loading fashion-mnist data... done
+Loading model... done
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+---------------------------------------------------------
+Op Time: 0.010516
+Correctness: 0.8562 Model: ece408-high
+[32m✱ Running python /src/final.py ece408-low[0m
+Loading fashion-mnist data... done
+Loading model... done
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+---------------------------------------------------------
+Op Time: 0.010496
+Correctness: 0.629 Model: ece408-low
+[32m✱ Running python /src/m3.1.py ece408-high[0m
+Loading fashion-mnist data... done
+Loading model... done
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+---------------------------------------------------------
+Op Time: 0.010521
+Correctness: 0.8562 Model: ece408-high
+[32m✱ Running python /src/m3.1.py ece408-low[0m
+Loading fashion-mnist data... done
+Loading model... done
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+---------------------------------------------------------
+Op Time: 0.010502
+Correctness: 0.629 Model: ece408-low
+[32m✱ The build folder has been uploaded to http://s3.amazonaws.com/files.rai-project.com/userdata/build-9ae85672-a133-45cd-bd1d-acedc470283a.tar.gz. The data will be present for only a short duration of time.[0m
+[32m✱ Server has ended your request.[0m

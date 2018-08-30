@@ -1,0 +1,786 @@
+[
+  {
+    "checksum": "a8602b7c1f0b00f9664eac192a46464b18abfe97  minixfs.c\n",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      }
+    ],
+    "revision": "87951",
+    "timestamp": "2018-04-13 22:00:02.653210"
+  },
+  {
+    "checksum": "a8602b7c1f0b00f9664eac192a46464b18abfe97  minixfs.c\n",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      }
+    ],
+    "revision": "88279",
+    "timestamp": "2018-04-14 22:00:02.692191"
+  },
+  {
+    "checksum": "a8602b7c1f0b00f9664eac192a46464b18abfe97  minixfs.c\n",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      }
+    ],
+    "revision": "88952",
+    "timestamp": "2018-04-15 22:00:02.738400"
+  },
+  {
+    "checksum": "00f34aa32efaf9a80d4df1087108b690ffedbeb5  minixfs.c\n",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      }
+    ],
+    "revision": "90496",
+    "timestamp": "2018-04-16 22:00:02.652657"
+  },
+  {
+    "checksum": "51f0738684cd60f59644709f9db28226786e6cfc  minixfs.c\n",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      }
+    ],
+    "revision": "91415",
+    "timestamp": "2018-04-17 22:00:02.772315"
+  },
+  {
+    "checksum": "51f0738684cd60f59644709f9db28226786e6cfc  minixfs.c\n",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      }
+    ],
+    "revision": "91875",
+    "timestamp": "2018-04-18 12:00:02.807526"
+  },
+  {
+    "revision": "92731",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      }
+    ],
+    "checksum": "08e014e5b21f2a8e6d1aa3fe149ac0c644aa0942  minixfs.c\n",
+    "timestamp": "2018-04-19 00:00:02.791537"
+  },
+  {
+    "checksum": "9a59ac36c9fffe7fc24285459ceb837752768612  minixfs.c\n",
+    "testcases": [
+      {
+        "name": "chmod_test",
+        "description": "Testing chmod",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "chown_test",
+        "description": "Testing chown",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block",
+        "description": "Testing that minixfs_read can read 1 block",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block_length",
+        "description": "Test that minixfs_read can read 1 block with different lengths of bytes",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_1_block_offset",
+        "description": "Test that minixfs_read can handle offsets correctly",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_direct_blocks",
+        "description": "Test that all direct blocks can be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_indirect_block_with_offset",
+        "description": "Check all indirect blocks can be read with specified offsets",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "read_indirect_blocks",
+        "description": "Check that all indirect blocks can also be read",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "write_direct_blocks_with_offset",
+        "description": "Check that direct blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "write_errs",
+        "description": "Check that errno is set correctly on failure",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      },
+      {
+        "name": "write_indirect_blocks_with_offset",
+        "description": "Check that indirect blocks can be written to",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 0.0
+      },
+      {
+        "name": "writeNewFile",
+        "description": "Attempt to write to a non-existant file successfully",
+        "log": "Trying to compile your code...\nSuccessfully compiled your code.\nTrying to compile your code...\nSuccessfully compiled your code.",
+        "ptsPossible": 1.0,
+        "ptsEarned": 1.0
+      }
+    ],
+    "revision": "101694",
+    "timestamp": "2018-05-05 20:22:35.808402"
+  }
+]

@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: gcr-deployment
+  labels:
+    app: gcr
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gcr
+  template:
+    metadata:
+            labels:
+                    app: gcr
+    spec:
+      containers:
+              - name: gcr
+                image: "gcr.io/cs398-zq2-mp9/mp9"
+                ports:
+                        - containerPort: 8080

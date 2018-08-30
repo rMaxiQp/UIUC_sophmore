@@ -1,0 +1,25 @@
+Grades for version committed on time
+	pipelined_adding_machine test: 20.0 / 20
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+			*Passed test: add
+		
+Total: 20.0 / 20
+
+Final Score: 20.0 / 20

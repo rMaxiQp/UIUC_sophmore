@@ -1,0 +1,63 @@
+Grades for version committed on time
+	gcd_control: 34.0 / 35.0
+			*Passed test: Basic Test when Go=1 for one cycle: X = 354, Y = 118
+			*Passed test: Basic Test when Go=1 for 1000 cycles: X = 354, Y = 118
+			*Passed test: Basic Test when Go=1 for one cycle: X = 10, Y = 4
+			*Passed test: Basic Test when Go=1 for 1000 cycles: X = 10, Y = 4
+			*Passed test: Basic Test when Go=1 for one cycle: X = 13, Y = 19
+			*Passed test: Basic Test when Go=1 for 1000 cycles: X = 13, Y = 19
+			*Passed test: Basic Test when Go=1 for one cycle: X = 5, Y = 5
+			*Passed test: Basic Test when Go=1 for 1000 cycles: X = 5, Y = 5
+			*Passed test: Basic Test when Go=1 for one cycle: X = 27, Y = 63
+			*Passed test: Basic Test when Go=1 for 1000 cycles: X = 27, Y = 63
+			*Passed test: Test when X and Y keep changing with Go=1 for one cycle
+			*Passed test: Test when X and Y keep changing with Go=1 for 1000 cycles
+			*Passed test: Test series of calculations with Go=1 for one cycle
+			*Failed test: Test series of calculations with Go=1 for 1000 cycles
+			*Passed test: Test multiple resets with Go=1 for one cycle
+			*Passed test: Test multiple resets with Go=1 for 1000 cycles
+			*Passed test: Test interrupting go with go=1 for one cycle
+			*Passed test: Test interrupting go with go=1 for 1000 cycles
+		
+	register file: 30.0 / 30.0
+			*Passed test: Register Zero always 0
+			*Passed test: Register 1 read and write correctly
+			*Passed test: Register 2 read and write correctly
+			*Passed test: Register 3 read and write correctly
+			*Passed test: Register 4 read and write correctly
+			*Passed test: Register 5 read and write correctly
+			*Passed test: Register 6 read and write correctly
+			*Passed test: Register 7 read and write correctly
+			*Passed test: Register 8 read and write correctly
+			*Passed test: Register 9 read and write correctly
+			*Passed test: Register 10 read and write correctly
+			*Passed test: Register 11 read and write correctly
+			*Passed test: Register 12 read and write correctly
+			*Passed test: Register 13 read and write correctly
+			*Passed test: Register 14 read and write correctly
+			*Passed test: Register 15 read and write correctly
+			*Passed test: Register 31 read and write correctly
+			*Passed test: Register 30 read and write correctly
+			*Passed test: Register 29 read and write correctly
+			*Passed test: Register 28 read and write correctly
+			*Passed test: Register 27 read and write correctly
+			*Passed test: Register 26 read and write correctly
+			*Passed test: Register 25 read and write correctly
+			*Passed test: Register 24 read and write correctly
+			*Passed test: Register 23 read and write correctly
+			*Passed test: Register 22 read and write correctly
+			*Passed test: Register 21 read and write correctly
+			*Passed test: Register 20 read and write correctly
+			*Passed test: Register 19 read and write correctly
+			*Passed test: Register 18 read and write correctly
+			*Passed test: Register 17 read and write correctly
+			*Passed test: Register 16 read and write correctly
+			*Passed test: Enable Works Correctly
+			*Passed test: Reset Works Correctly
+			*Passed test: Write One Register
+			*Passed test: Both Read Ports Work
+			*Passed test: Write All Registers
+		
+Total: 64.0 / 65.0
+
+Final Score: 64.0 / 65.0

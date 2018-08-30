@@ -1,0 +1,61 @@
+Total: 26.4/100
+
+Testing add: 0.375/3.75
+Register 5 should have been 0x00000014 but was 0x00000000
+Register 6 should have been 0xfffffffe but was 0x00000000
+No registers or memory were unexpectedly modified
+
+Testing sub: 0.375/3.75
+Register 5 should have been 0xfffffff3 but was 0x00000001
+Register 6 should have been 0x0000001f but was 0x00000001
+No registers or memory were unexpectedly modified
+
+Testing and: 0.375/3.75
+Register 5 should have been 0x000b0d0f but was 0x00000001
+Register 6 should have been 0x00a0c0e0 but was 0x00000000
+No registers or memory were unexpectedly modified
+
+Testing or: 0.375/3.75
+Register 10 should have been 0xfafef0d1 but was 0x00000001
+Register 11 should have been 0xfadeb0fd but was 0x00000001
+No registers or memory were unexpectedly modified
+
+Testing lw: 0.375/3.75
+Register 2 should have been 0x12345678 but was 0x00000000
+Register 3 should have been 0x87654321 but was 0x00000001
+No registers or memory were unexpectedly modified
+
+Testing sw: 3.75/3.75
+Address 0x10010000 had correct value 0x0000002a
+Address 0x1001000c had correct value 0xcafebabe
+No registers or memory were unexpectedly modified
+
+Testing slt: 3.75/3.75
+Register 3 had correct value 0x00000001
+Register 4 had correct value 0x00000000
+Register 5 had correct value 0x00000000
+Register 6 had correct value 0x00000001
+Register 7 had correct value 0x00000000
+Register 8 had correct value 0x00000000
+Register 9 had correct value 0x00000001
+No registers or memory were unexpectedly modified
+
+Testing taken beq: 1.875/1.875
+PC sequence 0x00400000, 0x00400008 was correct
+No registers or memory were unexpectedly modified
+
+Testing not taken beq: 1.875/1.875
+PC sequence 0x00400000, 0x00400004 was correct
+No registers or memory were unexpectedly modified
+
+Testing negative lwinn: 2.1/21.0
+Register 2 should have been 0x10010000 but was 0x00000000
+No registers or memory were unexpectedly modified
+
+Testing positive lwinn: 4.2/42.0
+Register 3 should have been 0x000000e9 but was 0x00000000
+No registers or memory were unexpectedly modified
+
+Testing zero lwinn: 7.0/7.0
+Register 4 had correct value 0x00000000
+No registers or memory were unexpectedly modified

@@ -1,0 +1,55 @@
+Grades for version committed on time
+	coprocessor 0: 23.33 / 35
+			*Passed test: reset
+			*Passed test: write status register
+			*Passed test: take timer interrupt
+			*Passed test: stop taking after cycle
+			*Passed test: read EPC
+			*Passed test: read cause register
+			*Passed test: eret clears exception level
+			*Passed test: eret clears cause register
+			*Passed test: write EPC
+			*Failed test: read EPC
+				*Your output: rd_data = 0x01000080 EPC = 0x00400020 TakenInterrupt = 0
+			*Failed test: disable interrupts
+				*Your output: rd_data = 0x0000ff01 EPC = 0x00400020 TakenInterrupt = 0
+			*Failed test: disable interrupts
+				*Your output: rd_data = 0x0000ff00 EPC = 0x00400020 TakenInterrupt = 0
+			*Failed test: enable interrupts
+				*Your output: rd_data = 0x00007f01 EPC = 0x00400020 TakenInterrupt = 0
+			*Failed test: enable timer interrupts
+				*Your output: rd_data = 0x0000ff01 EPC = 0x00400020 TakenInterrupt = 1
+			*Passed test: reset
+		
+	interrupts datapath: 35.0 / 35
+			*Passed test: timer read
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: control flow
+			*Passed test: interrupt handling
+			*Passed test: interrupt handling
+		
+Total: 58.33 / 70
+
+Final Score: 58.33 / 70

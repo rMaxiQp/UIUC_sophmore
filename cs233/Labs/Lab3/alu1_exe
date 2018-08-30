@@ -1,0 +1,210 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x21e0fd0 .scope module, "alu1_test" "alu1_test" 2 1;
+ .timescale 0 0;
+v0x22105b0_0 .var "A", 0 0;
+v0x2210630_0 .var "B", 0 0;
+v0x22106b0_0 .var "Cin", 0 0;
+v0x2210730_0 .net "Cout", 0 0, L_0x2210e70; 1 drivers
+v0x2210800_0 .var "control", 2 0;
+v0x2210880_0 .net "out", 0 0, L_0x2212090; 1 drivers
+S_0x21dff90 .scope module, "a1" "alu1" 2 29, 3 21, S_0x21e0fd0;
+ .timescale 0 0;
+L_0x2210950 .functor XOR 1, v0x2210630_0, L_0x2210a00, C4<0>, C4<0>;
+v0x220fed0_0 .net "A", 0 0, v0x22105b0_0; 1 drivers
+v0x220ffa0_0 .net "B", 0 0, v0x2210630_0; 1 drivers
+v0x2210020_0 .net *"_s1", 0 0, L_0x2210a00; 1 drivers
+v0x22100a0_0 .net "addOut", 0 0, L_0x2210c30; 1 drivers
+v0x2210170_0 .net "carryin", 0 0, v0x22106b0_0; 1 drivers
+v0x22101f0_0 .alias "carryout", 0 0, v0x2210730_0;
+v0x2210270_0 .net "control", 2 0, v0x2210800_0; 1 drivers
+v0x22102f0_0 .net "logicOut", 0 0, L_0x2211c10; 1 drivers
+v0x2210450_0 .alias "out", 0 0, v0x2210880_0;
+v0x22104d0_0 .net "wB", 0 0, L_0x2210950; 1 drivers
+L_0x2210a00 .part v0x2210800_0, 0, 1;
+L_0x2211e40 .part v0x2210800_0, 0, 2;
+L_0x2212190 .part v0x2210800_0, 2, 1;
+S_0x220f950 .scope module, "f1" "full_adder" 3 28, 3 1, S_0x21dff90;
+ .timescale 0 0;
+L_0x2210b40 .functor XOR 1, v0x22105b0_0, L_0x2210950, C4<0>, C4<0>;
+L_0x2210c30 .functor XOR 1, L_0x2210b40, v0x22106b0_0, C4<0>, C4<0>;
+L_0x2210c90 .functor AND 1, v0x22105b0_0, L_0x2210950, C4<1>, C4<1>;
+L_0x2210d80 .functor AND 1, L_0x2210b40, v0x22106b0_0, C4<1>, C4<1>;
+L_0x2210e70 .functor OR 1, L_0x2210c90, L_0x2210d80, C4<0>, C4<0>;
+v0x220fa40_0 .alias "a", 0 0, v0x220fed0_0;
+v0x220fac0_0 .alias "b", 0 0, v0x22104d0_0;
+v0x220fb40_0 .alias "cin", 0 0, v0x2210170_0;
+v0x220fbc0_0 .alias "cout", 0 0, v0x2210730_0;
+v0x220fc40_0 .net "partial_c1", 0 0, L_0x2210c90; 1 drivers
+v0x220fcc0_0 .net "partial_c2", 0 0, L_0x2210d80; 1 drivers
+v0x220fd60_0 .net "partial_s", 0 0, L_0x2210b40; 1 drivers
+v0x220fe00_0 .alias "sum", 0 0, v0x22100a0_0;
+S_0x220db00 .scope module, "l1" "logicunit" 3 29, 4 2, S_0x21dff90;
+ .timescale 0 0;
+L_0x2210ed0 .functor AND 1, v0x22105b0_0, v0x2210630_0, C4<1>, C4<1>;
+L_0x2210fe0 .functor OR 1, v0x22105b0_0, v0x2210630_0, C4<0>, C4<0>;
+L_0x2211060 .functor NOR 1, v0x22105b0_0, v0x2210630_0, C4<0>, C4<0>;
+L_0x2210ba0 .functor XOR 1, v0x22105b0_0, v0x2210630_0, C4<0>, C4<0>;
+v0x220f3c0_0 .alias "A", 0 0, v0x220fed0_0;
+v0x220f440_0 .alias "B", 0 0, v0x220ffa0_0;
+v0x220f4c0_0 .net "control", 1 0, L_0x2211e40; 1 drivers
+v0x220f540_0 .alias "out", 0 0, v0x22102f0_0;
+v0x220f5c0_0 .net "w1", 0 0, L_0x2210ed0; 1 drivers
+v0x220f690_0 .net "w2", 0 0, L_0x2210fe0; 1 drivers
+v0x220f760_0 .net "w3", 0 0, L_0x2211060; 1 drivers
+v0x220f830_0 .net "w4", 0 0, L_0x2210ba0; 1 drivers
+S_0x220dbf0 .scope module, "m1" "mux4" 4 11, 5 16, S_0x220db00;
+ .timescale 0 0;
+v0x220ed60_0 .alias "A", 0 0, v0x220f5c0_0;
+v0x220ee00_0 .alias "B", 0 0, v0x220f690_0;
+v0x220eeb0_0 .alias "C", 0 0, v0x220f760_0;
+v0x220ef60_0 .alias "D", 0 0, v0x220f830_0;
+v0x220f040_0 .alias "control", 1 0, v0x220f4c0_0;
+v0x220f0c0_0 .alias "out", 0 0, v0x22102f0_0;
+v0x220f1d0_0 .net "w1", 0 0, L_0x2211430; 1 drivers
+v0x220f2a0_0 .net "w2", 0 0, L_0x2211830; 1 drivers
+L_0x22114e0 .part L_0x2211e40, 0, 1;
+L_0x2211930 .part L_0x2211e40, 0, 1;
+L_0x2211d10 .part L_0x2211e40, 1, 1;
+S_0x220e7e0 .scope module, "m1" "mux2" 5 22, 5 2, S_0x220dbf0;
+ .timescale 0 0;
+L_0x22111f0 .functor NOT 1, L_0x22114e0, C4<0>, C4<0>, C4<0>;
+L_0x2211250 .functor AND 1, L_0x2210ed0, L_0x22111f0, C4<1>, C4<1>;
+L_0x2211340 .functor AND 1, L_0x2210fe0, L_0x22114e0, C4<1>, C4<1>;
+L_0x2211430 .functor OR 1, L_0x2211250, L_0x2211340, C4<0>, C4<0>;
+v0x220e8d0_0 .alias "A", 0 0, v0x220f5c0_0;
+v0x220e990_0 .alias "B", 0 0, v0x220f690_0;
+v0x220ea30_0 .net "control", 0 0, L_0x22114e0; 1 drivers
+v0x220ead0_0 .net "not_control", 0 0, L_0x22111f0; 1 drivers
+v0x220eb50_0 .alias "out", 0 0, v0x220f1d0_0;
+v0x220ec00_0 .net "wA", 0 0, L_0x2211250; 1 drivers
+v0x220ecc0_0 .net "wB", 0 0, L_0x2211340; 1 drivers
+S_0x220e260 .scope module, "m2" "mux2" 5 23, 5 2, S_0x220dbf0;
+ .timescale 0 0;
+L_0x22115d0 .functor NOT 1, L_0x2211930, C4<0>, C4<0>, C4<0>;
+L_0x2211650 .functor AND 1, L_0x2211060, L_0x22115d0, C4<1>, C4<1>;
+L_0x2211740 .functor AND 1, L_0x2210ba0, L_0x2211930, C4<1>, C4<1>;
+L_0x2211830 .functor OR 1, L_0x2211650, L_0x2211740, C4<0>, C4<0>;
+v0x220e350_0 .alias "A", 0 0, v0x220f760_0;
+v0x220e410_0 .alias "B", 0 0, v0x220f830_0;
+v0x220e4b0_0 .net "control", 0 0, L_0x2211930; 1 drivers
+v0x220e550_0 .net "not_control", 0 0, L_0x22115d0; 1 drivers
+v0x220e5d0_0 .alias "out", 0 0, v0x220f2a0_0;
+v0x220e680_0 .net "wA", 0 0, L_0x2211650; 1 drivers
+v0x220e740_0 .net "wB", 0 0, L_0x2211740; 1 drivers
+S_0x220dce0 .scope module, "m3" "mux2" 5 24, 5 2, S_0x220dbf0;
+ .timescale 0 0;
+L_0x22119d0 .functor NOT 1, L_0x2211d10, C4<0>, C4<0>, C4<0>;
+L_0x2211a30 .functor AND 1, L_0x2211430, L_0x22119d0, C4<1>, C4<1>;
+L_0x2211b20 .functor AND 1, L_0x2211830, L_0x2211d10, C4<1>, C4<1>;
+L_0x2211c10 .functor OR 1, L_0x2211a30, L_0x2211b20, C4<0>, C4<0>;
+v0x220ddd0_0 .alias "A", 0 0, v0x220f1d0_0;
+v0x220de90_0 .alias "B", 0 0, v0x220f2a0_0;
+v0x220df30_0 .net "control", 0 0, L_0x2211d10; 1 drivers
+v0x220dfd0_0 .net "not_control", 0 0, L_0x22119d0; 1 drivers
+v0x220e050_0 .alias "out", 0 0, v0x22102f0_0;
+v0x220e100_0 .net "wA", 0 0, L_0x2211a30; 1 drivers
+v0x220e1c0_0 .net "wB", 0 0, L_0x2211b20; 1 drivers
+S_0x21f21e0 .scope module, "m2" "mux2" 3 30, 5 2, S_0x21dff90;
+ .timescale 0 0;
+L_0x2211ee0 .functor NOT 1, L_0x2212190, C4<0>, C4<0>, C4<0>;
+L_0x2211f40 .functor AND 1, L_0x2210c30, L_0x2211ee0, C4<1>, C4<1>;
+L_0x2212030 .functor AND 1, L_0x2211c10, L_0x2212190, C4<1>, C4<1>;
+L_0x2212090 .functor OR 1, L_0x2211f40, L_0x2212030, C4<0>, C4<0>;
+v0x21e3bf0_0 .alias "A", 0 0, v0x22100a0_0;
+v0x220d6f0_0 .alias "B", 0 0, v0x22102f0_0;
+v0x220d790_0 .net "control", 0 0, L_0x2212190; 1 drivers
+v0x220d830_0 .net "not_control", 0 0, L_0x2211ee0; 1 drivers
+v0x220d8e0_0 .alias "out", 0 0, v0x2210880_0;
+v0x220d980_0 .net "wA", 0 0, L_0x2211f40; 1 drivers
+v0x220da60_0 .net "wB", 0 0, L_0x2212030; 1 drivers
+    .scope S_0x21e0fd0;
+T_0 ;
+    %set/v v0x22105b0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x21e0fd0;
+T_1 ;
+    %delay 1, 0;
+    %load/v 8, v0x22105b0_0, 1;
+    %inv 8, 1;
+    %set/v v0x22105b0_0, 8, 1;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x21e0fd0;
+T_2 ;
+    %set/v v0x2210630_0, 0, 1;
+    %end;
+    .thread T_2;
+    .scope S_0x21e0fd0;
+T_3 ;
+    %delay 2, 0;
+    %load/v 8, v0x2210630_0, 1;
+    %inv 8, 1;
+    %set/v v0x2210630_0, 8, 1;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0x21e0fd0;
+T_4 ;
+    %set/v v0x22106b0_0, 0, 1;
+    %end;
+    .thread T_4;
+    .scope S_0x21e0fd0;
+T_5 ;
+    %delay 4, 0;
+    %load/v 8, v0x22106b0_0, 1;
+    %inv 8, 1;
+    %set/v v0x22106b0_0, 8, 1;
+    %jmp T_5;
+    .thread T_5;
+    .scope S_0x21e0fd0;
+T_6 ;
+    %set/v v0x2210800_0, 0, 3;
+    %end;
+    .thread T_6;
+    .scope S_0x21e0fd0;
+T_7 ;
+    %vpi_call 2 14 "$dumpfile", "alu1.vcd";
+    %vpi_call 2 15 "$dumpvars", 1'sb0, S_0x21e0fd0;
+    %delay 16, 0;
+    %movi 8, 1, 3;
+    %set/v v0x2210800_0, 8, 3;
+    %delay 16, 0;
+    %movi 8, 2, 3;
+    %set/v v0x2210800_0, 8, 3;
+    %delay 16, 0;
+    %movi 8, 3, 3;
+    %set/v v0x2210800_0, 8, 3;
+    %delay 16, 0;
+    %movi 8, 4, 3;
+    %set/v v0x2210800_0, 8, 3;
+    %delay 16, 0;
+    %movi 8, 5, 3;
+    %set/v v0x2210800_0, 8, 3;
+    %delay 16, 0;
+    %movi 8, 6, 3;
+    %set/v v0x2210800_0, 8, 3;
+    %delay 16, 0;
+    %set/v v0x2210800_0, 1, 3;
+    %delay 16, 0;
+    %vpi_call 2 25 "$finish";
+    %end;
+    .thread T_7;
+    .scope S_0x21e0fd0;
+T_8 ;
+    %vpi_call 2 34 "$display", "A B i o s out";
+    %vpi_call 2 35 "$monitor", "%d %d %d %d %d %d (at time %t)", v0x22105b0_0, v0x2210630_0, v0x22106b0_0, v0x2210730_0, v0x2210800_0, v0x2210880_0, $time;
+    %end;
+    .thread T_8;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "alu1_tb.v";
+    "alu1.v";
+    "logicunit.v";
+    "mux.v";

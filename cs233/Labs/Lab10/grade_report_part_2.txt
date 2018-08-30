@@ -1,0 +1,11 @@
+Grades for version committed on time
+	part 2: 69.05 / 70.0
+			*Passed test: mapseed 42 (default mapseed)
+			*Partially passed test: mapseed 106
+					Your score: 67 Threshold: 80.0
+					Your starcoins: 49.0 Threshold: 24.0
+			*Passed test: mapseed 999
+		
+Total: 69.05 / 70.0
+
+Final Score: 69.05 / 70.0

@@ -1,0 +1,57 @@
+SUMMARY
+=======
+	Autograder Run Time: Wed 2018-04-11 06:56AM
+	Commit used for autograder: 
+	Points Earned: 16
+	Points Possible: 16
+	Assignment Grade: 100.0%
+
+
+TestMP7Functional
+=================
+	> test_user
+	---------
+	Description: Tests that Docker image uses cs398 user
+	Outcome: passed
+	Points: 2 out of 2
+
+	> test_server
+	-----------
+	Description: Tests that your web server works correctly
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_karl_the_fog
+	-----------------
+	Description: Tests that /data/info.txt contains the "karl the fog" message 
+	Outcome: passed
+	Points: 2 out of 2
+
+	> test_python_version
+	-------------------
+	Description: Tests that a version of python3 is installed and able to be run
+	Outcome: passed
+	Points: 3 out of 3
+
+
+TestMP7Dockerfile
+=================
+	> test_base_image
+	---------------
+	Description: Tests that the dockerfile base image is set to ubuntu
+	Outcome: passed
+	Points: 1 out of 1
+
+	> test_labels
+	-----------
+	Description: Tests that NETID and CLASS labels are set correctly
+	Outcome: passed
+	Points: 2 out of 2
+
+	> test_env
+	--------
+	Description: Tests that the SCHOOL environment variable is set
+	Outcome: passed
+	Points: 1 out of 1
+
+

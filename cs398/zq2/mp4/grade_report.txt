@@ -1,0 +1,58 @@
+SUMMARY
+=======
+	Autograder Run Time: Thu 2018-02-22 03:27AM
+	Commit used for autograder: b1c213789f01fa20c5510cb0fc535bb1b4e7b5e4
+	Points Earned: 30
+	Points Possible: 40
+	Assignment Grade: 75.0%
+
+
+TestMP4TrendingHashtagsAccuracy
+===============================
+	> test_output
+	-----------
+	Description:  tests that you return a valid DStream, that output is in correct format, and that output is correct 
+	Outcome: passed
+	Points: 10 out of 10
+
+
+TestMP4TrendingHashtagsValidity
+===============================
+	> test_validity
+	-------------
+	Description:  tests that you return a valid DStream 
+	Outcome: passed
+	Points: 5 out of 5
+
+
+TestMP4SubredditTopicsAccuracy
+==============================
+	> test_output
+	-----------
+	Description:  tests that you return a valid DStream, that output is in correct format, and that output is correct 
+	Outcome: failed
+	Points: 0 out of 10
+	Error Message:
+		AssertionError: Items in the first set but not the second:
+		'worldhello'
+		'uphello'
+		
+
+TestMP4SubredditTopicsValidity
+==============================
+	> test_output
+	-----------
+	Description:  tests that you return a valid DStream 
+	Outcome: passed
+	Points: 5 out of 5
+
+
+TestMP4RedditBotDetection
+=========================
+	> test_validity
+	-------------
+	Description:  tests that you return a valid DStream 
+	Outcome: passed
+	Points: 10 out of 10
+
+

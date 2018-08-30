@@ -1,0 +1,9 @@
+Grades for version committed on time
+	filter: 79.67 / 80
+			*Partially passed test: prefetch (1.1 speedup)
+			*Passed test: fusion
+			*Passed test: all
+		
+Total: 79.67 / 80
+
+Final Score: 79.67 / 80

@@ -1,0 +1,33 @@
+Grades for version committed on time
+	gcd circuit: 35.0 / 35.0
+			*Passed test: basic
+				*out correctly detected on 1 cycles.
+				5.00/5.00 points
+			*Passed test: output selection 1
+				*x_lt_y correctly detected on 3 cycles.
+				*x_ne_y correctly detected on 3 cycles.
+				*out correctly detected on 1 cycles.
+				5.00/5.00 points
+			*Passed test: output selection 2
+				*x_ne_y correctly detected on 3 cycles.
+				*out correctly detected on 1 cycles.
+				5.00/5.00 points
+			*Passed test: x sel y sel
+				*out correctly detected on 1 cycles.
+				5.00/5.00 points
+			*Passed test: x en
+				*x_ne_y correctly detected on 2 cycles.
+				5.00/5.00 points
+			*Passed test: subtraction
+				*x_lt_y correctly detected on 3 cycles.
+				*x_ne_y correctly detected on 5 cycles.
+				*out correctly detected on 3 cycles.
+				5.00/5.00 points
+			*Passed test: x_lt_y and x_ne_y
+				*x_lt_y correctly detected on 2 cycles.
+				*x_ne_y correctly detected on 8 cycles.
+				5.00/5.00 points
+		
+Total: 35.0 / 35.0
+
+Final Score: 35.0 / 35.0

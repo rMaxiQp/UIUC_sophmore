@@ -1,0 +1,13 @@
+1: To detect robots, I first pick a window and check post frequency of each user.
+   If the user has a large amount of posts, he/she would be the potential target.
+   Therefore, I would compare each post by user and check for their similarity.
+   If most of the user's posts are similar, this user should be classified as robot.
+
+2: BatchDuration is the length of each batch, while window Length and sideInterval are
+   associated with more specific classification of the length of RDD which is part of the
+   dStream that is formed with batches.
+
+3: dStream is the continous stream of RDDs
+
+4: Checkpoint is a process to write input stream into HDFS. It is fault tolerant, which improves stream reliability.
+   If we need an essentially real stream, this would be essential to be enabled.

@@ -1,0 +1,113 @@
+SUMMARY
+=======
+	Autograder Run Time: Wed 2018-01-31 01:07PM
+	Points Earned: 56
+	Points Possible: 56
+	Assignment Grade: 100.0%
+
+
+TestMP1BigramCount
+==================
+	> test_format
+	-----------
+	Description: Tests that your keys are always comma-separated bigrams and values are integers
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_ipsum
+	----------
+	Description: Tests against the Lorem Ipsum data
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_simple
+	-----------
+	Description: Tests the simple example given in the README
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_single_stage
+	-----------------
+	Description: Tests that your MRJob class only uses a single MR step
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description: Tests that your MapReduce class is a valid MRJob class
+	Outcome: passed
+	Points: 3 out of 3
+
+
+TestMP1TwitterFollowers
+=======================
+	> test_full_dataset
+	-----------------
+	Description: Tests against the full provided dataset
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_output_format
+	------------------
+	Description: Tests that your output matches the spec
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_simple
+	-----------
+	Description: Tests the simple example given in the README
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_two_stage
+	--------------
+	Description: Tests that your MRJob class only uses 2 MR steps
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description: Tests that your MapReduce class is a valid MRJob class
+	Outcome: passed
+	Points: 3 out of 3
+
+
+TestMP1WikipediaPaths
+=====================
+	> test_format
+	-----------
+	Description: Tests that your keys are articles and values are integers
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_full_dataset
+	-----------------
+	Description: Tests against the full provided dataset
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_multiple_back_clicks
+	-------------------------
+	Description: Tests that your program produces the correct values for input "a;d;b;c;<;<;<;d;c;d"
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_simple
+	-----------
+	Description: Tests the simple example given in the README
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_single_stage
+	-----------------
+	Description: Tests that your MRJob class only uses 1 MR step
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description: Tests that your MapReduce class is a valid MRJob class
+	Outcome: passed
+	Points: 3 out of 3
+
+

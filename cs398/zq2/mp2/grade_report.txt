@@ -1,0 +1,143 @@
+SUMMARY
+=======
+	Autograder Run Time: Wed 2018-02-07 06:31AM
+	Points Earned: 36
+	Points Possible: 56
+	Assignment Grade: 64.3%
+
+
+TestMP2ActiveUsers
+==================
+	> test_format
+	-----------
+	Description: Tests that your key/value output matches the problem spec
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_larger_subset
+	------------------
+	Description: Tests against the a larger subset of the twitter data
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_sample
+	-----------
+	Description: Tests against the sample twitter data
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_single_stage
+	-----------------
+	Description: Tests that your MRJob class only uses a single MR step
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description: Tests that your MapReduce class is a valid MRJob class
+	Outcome: passed
+	Points: 3 out of 3
+
+
+TestMP2AtMentions
+=================
+	> test_larger_subset
+	------------------
+	Description: Tests against a larger subset of the full dataset
+	Outcome: failed
+	Points: 0 out of 5
+	Error Message:
+		File "/student_code/twitter_at_mentions.py", line 1
+		mport re
+		^
+		SyntaxError: invalid syntax
+		
+	> test_output_format
+	------------------
+	Description: Tests that your output matches the spec
+	Outcome: failed
+	Points: 0 out of 3
+	Error Message:
+		File "/student_code/twitter_at_mentions.py", line 1
+		mport re
+		^
+		SyntaxError: invalid syntax
+		
+	> test_sample
+	-----------
+	Description: Tests against the sample dataset
+	Outcome: failed
+	Points: 0 out of 3
+	Error Message:
+		File "/student_code/twitter_at_mentions.py", line 1
+		mport re
+		^
+		SyntaxError: invalid syntax
+		
+	> test_single_stage
+	-----------------
+	Description: Tests that your MRJob class only uses 1 MR step
+	Outcome: failed
+	Points: 0 out of 3
+	Error Message:
+		File "/student_code/twitter_at_mentions.py", line 1
+		mport re
+		^
+		SyntaxError: invalid syntax
+		
+	> test_username_edge_cases
+	------------------------
+	Description: Tests against edge cases for username detection
+	Outcome: failed
+	Points: 0 out of 3
+	Error Message:
+		File "/student_code/twitter_at_mentions.py", line 1
+		mport re
+		^
+		SyntaxError: invalid syntax
+		
+	> test_validity
+	-------------
+	Description: Tests that your MapReduce class is a valid MRJob class
+	Outcome: failed
+	Points: 0 out of 3
+	Error Message:
+		File "/student_code/twitter_at_mentions.py", line 1
+		mport re
+		^
+		SyntaxError: invalid syntax
+		
+
+TestMP2LibraryCheckout
+======================
+	> test_format
+	-----------
+	Description: Tests that your keys are articles and values are integers
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_larger_subset
+	------------------
+	Description: Tests against the a different subset of the input
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_sample
+	-----------
+	Description: Tests against the sample input
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_single_stage
+	-----------------
+	Description: Tests that your MRJob class uses at most 2 MR steps
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_validity
+	-------------
+	Description: Tests that your MapReduce class is a valid MRJob class
+	Outcome: passed
+	Points: 3 out of 3
+
+

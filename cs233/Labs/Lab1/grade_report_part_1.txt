@@ -1,0 +1,14 @@
+Grades for version committed on time
+	sc2_block: 20.0 / 20
+			*Passed test: a = 0 b = 0 cin = 0
+			*Passed test: a = 0 b = 0 cin = 1
+			*Passed test: a = 0 b = 1 cin = 0
+			*Passed test: a = 0 b = 1 cin = 1
+			*Passed test: a = 1 b = 0 cin = 0
+			*Passed test: a = 1 b = 0 cin = 1
+			*Passed test: a = 1 b = 1 cin = 0
+			*Passed test: a = 1 b = 1 cin = 1
+		
+Total: 20.0 / 20
+
+Final Score: 20.0 / 20

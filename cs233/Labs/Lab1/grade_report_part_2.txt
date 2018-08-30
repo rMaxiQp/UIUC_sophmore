@@ -1,0 +1,14 @@
+Grades for version committed on time
+	blackbox: 80.0 / 80
+			*Passed test: 0 0 0
+			*Passed test: 0 0 1
+			*Passed test: 0 1 0
+			*Passed test: 0 1 1
+			*Passed test: 1 0 0
+			*Passed test: 1 0 1
+			*Passed test: 1 1 0
+			*Passed test: 1 1 1
+		
+Total: 80.0 / 80
+
+Final Score: 80.0 / 80

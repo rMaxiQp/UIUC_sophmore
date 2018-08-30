@@ -1,0 +1,9 @@
+cd ..
+
+sleep 2
+echo Finished!
+
+this is Garbage
+this is Garbage
+sleep 1
+ls

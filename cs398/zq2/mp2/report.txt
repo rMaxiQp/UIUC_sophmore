@@ -1,0 +1,33 @@
+# In approximately 50-100 words, characterize your observations for 3 configurations of reducers
+
+cmd: python twitter_active_users.py -r hadoop --jobconf mapreduce.job.maps=10 --jobconf mapreduce.job.reduces=5 data/twitter_sample.tsv > active_users.txt
+result:
+  Launched map tasks=10
+  Launched reduce tasks=5
+  Total time spent by all map tasks (ms)=111456
+  Total time spent by all maps in occupied slots (ms)=5349888
+  Total time spent by all reduce tasks (ms)=26029
+  Total time spent by all reduces in occupied slots (ms)=2498784
+  CPU time spent (ms)=16320
+
+cmd: python twitter_active_users.py -r hadoop --jobconf mapreduce.job.maps=10 --jobconf mapreduce.job.reduces=1 data/twitter_sample.tsv > active_users.txt
+result:
+  Launched map tasks=10
+  Launched reduce tasks=1
+  Total time spent by all map tasks (ms)=96284
+  Total time spent by all maps in occupied slots (ms)=4621632
+  Total time spent by all reduce tasks (ms)=6537
+  Total time spent by all reduces in occupied slots (ms)=627552
+  CPU time spent (ms)=10920
+
+cmd: python twitter_active_users.py -r hadoop --jobconf mapreduce.job.maps=10 --jobconf mapreduce.job.reduces=32 data/twitter_sample.tsv > active_users.txt
+result:
+  Launched map tasks=10
+  Launched reduce tasks=32
+  Total time spent by all map tasks (ms)=125730
+  Total time spent by all maps in occupied slots (ms)=6035040
+  Total time spent by all reduce tasks (ms)=164047
+  Total time spent by all reduces in occupied slots (ms)=15748512
+  CPU time spent (ms)=46110
+
+Even though the number of reduce task increases, the CPU time spent actually increases, too. With this scale of file, one reducer is the most efficient arrangement when there are 10 mappers.

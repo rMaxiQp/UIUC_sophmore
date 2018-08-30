@@ -1,0 +1,8 @@
+Strategies:
+1. Our bot mostly runs on the circle near the jetstream unless the bot is interrupted by the star signal.
+   So we can run in a faster than our opponents who do not always run on the jetstream.
+2. Our bot can fetch at least four stars and request a puzzle to solve,
+   which can be rewarded by a banana or a mushroom to speed us up.
+   (We are not gonna to use banana because it might hurt ourselves if the opponents do not have the same running track with ours).
+3. Although our bot is not able to avoid the space junk (banana),
+  if we eat all the bananas on the first turn of our running trace, we will not no chance to eat bananas after that. 

@@ -1,0 +1,35 @@
+Grades for version committed on time
+	timer: 30.0 / 30
+			*Passed test: initial reset
+			*Passed test: initial reset
+			*Passed test: reading cycle
+			*Passed test: reading cycle
+			*Passed test: reading cycle
+			*Passed test: reading cycle
+			*Passed test: reading cycle
+			*Passed test: requesting interrupt
+			*Passed test: reading cycle
+			*Passed test: reading cycle
+			*Passed test: raising interrupt
+			*Passed test: raising interrupt
+			*Passed test: raising interrupt
+			*Passed test: achnowledging interrupt
+			*Passed test: achnowledged interrupt
+			*Passed test: requesting interrupt
+			*Passed test: overwriting previous request
+			*Passed test: raising interrupt
+			*Passed test: acknowledging interrupt
+			*Passed test: acknowledged interrupt
+			*Passed test: reading cycle
+			*Passed test: reading cycle
+			*Passed test: reading from non-time address
+			*Passed test: request a time interrupt
+			*Passed test: resetting again ...
+			*Passed test: reset
+			*Passed test: reset
+			*Passed test: reset
+			*Passed test: reset
+		
+Total: 30.0 / 30
+
+Final Score: 30.0 / 30

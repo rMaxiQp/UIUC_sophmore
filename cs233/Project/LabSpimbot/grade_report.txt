@@ -1,0 +1,6 @@
+SPIMbot Grade Report
+Qualified for tournament
+Ranks over 10 runs: 17 48 46 41 34 22 17 36 24 65
+Lab score: 75
+Improper submission format penalty: -5
+Final lab score: 70

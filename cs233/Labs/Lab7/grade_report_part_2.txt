@@ -1,0 +1,50 @@
+Grades for version committed on time
+	accumulate: 40.0 / 40
+			*Passed test: Base Case 1 
+			*Passed test: Base Case 1  (evil)
+			*Passed test: Base Case 2 
+			*Passed test: Base Case 2  (evil)
+			*Passed test: Base Case 3
+			*Passed test: Base Case 3 (evil)
+			*Passed test: Given 1
+			*Passed test: Given 1 (evil)
+			*Passed test: Given 2
+			*Passed test: Given 2 (evil)
+			*Passed test: TooShort
+			*Passed test: TooShort (evil)
+			*Passed test: Empty
+			*Passed test: Empty (evil)
+			*Passed test: Long
+			*Passed test: Long (evil)
+		
+	max_n_unique_substring: 11.25 / 30
+			*Passed test: BaseCase n
+			*Passed test: BaseCase n (evil)
+			*Passed test: test_null
+			*Passed test: test_null (evil)
+			*Passed test: empty
+			*Passed test: empty (evil)
+			*Failed test: given1
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: given1 (evil)
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: given2
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: given2 (evil)
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: edge_case_n
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: edge_case_n (evil)
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: broken
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: broken (evil)
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: whole
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			*Failed test: whole (evil)
+				*Your output: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		
+Total: 51.25 / 70
+
+Final Score: 51.25 / 70

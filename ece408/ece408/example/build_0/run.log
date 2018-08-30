@@ -1,0 +1,24 @@
+[32m✱ Checking your athentication credentials.[0m
+[33mUsing the following build file for submission:
+# Submission file for ece 408 fall 2017
+rai:
+  version: 0.2
+  image: cwpearson/2017fa_ece408_mxnet_docker:amd64-gpu-latest
+resources:
+  cpu:
+    architecture: amd64
+  gpu:
+    architecture: pascal
+    count: 1
+  network: false
+commands:
+  build:
+    - /bin/bash -c "cp -rv /ece408-src/* /mxnet/src/operator/custom" # copy golden files to mxnet source tree
+    - /bin/bash -c "cp -rv /src/* /build" # copy to /build so the source appears in the upload
+    - /bin/bash -c "for src in ece408_src/*; do cp -v $src /mxnet/src/operator/custom/.; done" # copy source files to mxnet tree
+    - nice -n20 make -C /mxnet # build mxnet
+    - pip install --user -e /mxnet/python   # install python bindings
+    - /usr/bin/time -f "%Uuser %Ssystem %eelapsed" python /eval-scripts/final.py ece408-high
+    - /usr/bin/time -f "%Uuser %Ssystem %eelapsed" python /eval-scripts/final.py ece408-low
+[0m[33m✱ Preparing your project directory for upload.[0m
+[33m✱ Uploading your project directory. This may take a few minutes.[0m

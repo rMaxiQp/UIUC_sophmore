@@ -1,0 +1,5 @@
+This command file allows you to run many bash scripts in parallel. Precede the name of the bash script with an !
+!nosuchscript.sh
+!07-script1.sh
+!07-script2.sh
+!07-script3.sh

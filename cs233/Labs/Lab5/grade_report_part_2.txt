@@ -1,0 +1,16 @@
+Grades for version committed on time
+	arithmetic machine: 80.0 / 80
+			*Passed test: add
+			*Passed test: sub
+			*Passed test: and
+			*Passed test: or
+			*Passed test: nor
+			*Passed test: xor
+			*Passed test: addi
+			*Passed test: andi
+			*Passed test: ori
+			*Passed test: xori
+		
+Total: 80.0 / 80
+
+Final Score: 80.0 / 80

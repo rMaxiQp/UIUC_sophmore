@@ -1,0 +1,66 @@
+SUMMARY
+=======
+	Autograder Run Time: Wed 2018-02-28 01:35PM
+	Commit used for autograder: e198880c0c3276d7a3cc9db658f5f4c4b9e892e5
+	Points Earned: 40
+	Points Possible: 40
+	Assignment Grade: 100.0%
+
+
+TestMP5QuizzicalQueries
+=======================
+	> test_query1
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_query2
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 3 out of 3
+
+	> test_query3
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 4 out of 4
+
+
+TestMP5AggregationAggrevation
+=============================
+	> test_query1
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_query2
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 5 out of 5
+
+	> test_query3
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 5 out of 5
+
+
+TestMP5JauntingWithJoins
+========================
+	> test_query1
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 7 out of 7
+
+	> test_query2
+	-----------
+	Description: None
+	Outcome: passed
+	Points: 8 out of 8
+
+

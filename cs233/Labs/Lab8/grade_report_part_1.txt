@@ -1,0 +1,16 @@
+Grades for version committed on time
+	decrypt: 30.0 / 30
+			*Passed test: base case
+			*Passed test: base case (evil)
+			*Passed test: Test_Given1
+			*Passed test: Test_Given1 (evil)
+			*Passed test: Test_Given2
+			*Passed test: Test_Given2 (evil)
+			*Passed test: one_round
+			*Passed test: one_round (evil)
+			*Passed test: test_unsigned
+			*Passed test: test_unsigned (evil)
+		
+Total: 30.0 / 30
+
+Final Score: 30.0 / 30

@@ -1,0 +1,32 @@
+Passed test: 1
+Your output: inputs = 00  00  outputs = 11   time =  0
+Passed test: 2
+Your output: inputs = 00  01  outputs = 00   time = 10
+Passed test: 3
+Your output: inputs = 00  10  outputs = 00   time = 20
+Passed test: 4
+Your output: inputs = 00  11  outputs = 00   time = 30
+Passed test: 5
+Your output: inputs = 01  00  outputs = 11   time = 40
+Passed test: 6
+Your output: inputs = 01  01  outputs = 01   time = 50
+Passed test: 7
+Your output: inputs = 01  10  outputs = 00   time = 60
+Passed test: 8
+Your output: inputs = 01  11  outputs = 00   time = 70
+Passed test: 9
+Your output: inputs = 10  00  outputs = 11   time = 80
+Passed test: 10
+Your output: inputs = 10  01  outputs = 10   time = 90
+Passed test: 11
+Your output: inputs = 10  10  outputs = 01   time = 100
+Passed test: 12
+Your output: inputs = 10  11  outputs = 00   time = 110
+Passed test: 13
+Your output: inputs = 11  00  outputs = 11   time = 120
+Passed test: 14
+Your output: inputs = 11  01  outputs = 11   time = 130
+Passed test: 15
+Your output: inputs = 11  10  outputs = 01   time = 140
+Passed test: 16
+Your output: inputs = 11  11  outputs = 01   time = 150
