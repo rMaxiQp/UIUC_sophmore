@@ -1,6 +1,6 @@
 # UIUC_sophmore
 
-Dump Code Written In Sophmore Year, no guarantee if it works.
+Dumb Code Written In Sophmore Year, no guarantee if it works.
 
 | Course Number | Course Title | Language |
 | ------------- | ------------ | -------- |
